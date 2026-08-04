@@ -1,0 +1,34 @@
+{
+  "name": "fetcher-skills",
+  "owner": {
+    "name": "fetcher.sh",
+    "email": "info@fetcher.sh"
+  },
+  "metadata": {
+    "description": "Pay-per-call web-data skills for Twitter/X, TikTok, Instagram, YouTube, Reddit, Google Search, Google Maps, Google News, Google Play, App Store, and Yelp — x402 + prepaid credits, no OAuth.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "fetcher-skills",
+      "description": "13 skills covering 111 endpoints across 11 web-data services, paid per call in USDC via x402 or a prepaid credit key. Twitter/X is published twice (twitter-scraper, x-scraper) so either name resolves.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/fetcher",
+        "./skills/twitter-scraper",
+        "./skills/x-scraper",
+        "./skills/tiktok-scraper",
+        "./skills/instagram-scraper",
+        "./skills/youtube-scraper",
+        "./skills/reddit-scraper",
+        "./skills/google-search",
+        "./skills/google-maps",
+        "./skills/google-news",
+        "./skills/google-play",
+        "./skills/app-store",
+        "./skills/yelp"
+      ]
+    }
+  ]
+}

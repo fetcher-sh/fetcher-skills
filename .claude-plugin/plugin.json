@@ -1,0 +1,35 @@
+{
+  "name": "fetcher-skills",
+  "version": "1.0.0",
+  "description": "Agent skills for fetcher.sh — pay-per-call (x402 + credits) API access to Twitter/X, TikTok, Instagram, YouTube, Reddit, Google Search, Google Maps, Google News, Google Play, App Store, and Yelp. No OAuth, no signup.",
+  "author": {
+    "name": "fetcher.sh",
+    "email": "info@fetcher.sh"
+  },
+  "homepage": "https://fetcher.sh",
+  "repository": "https://github.com/fetcher-sh/fetcher-skills",
+  "license": "MIT",
+  "keywords": [
+    "web-scraping",
+    "social-media",
+    "twitter",
+    "x",
+    "tiktok",
+    "instagram",
+    "youtube",
+    "reddit",
+    "google-search",
+    "google-maps",
+    "google-news",
+    "google-play",
+    "app-store",
+    "yelp",
+    "x402",
+    "usdc",
+    "micropayments",
+    "mcp-server",
+    "data-extraction",
+    "api-alternative",
+    "ai-agent"
+  ]
+}
