@@ -7,8 +7,8 @@ description: >-
   skill whenever a task needs a fetcher.sh API key, a credit top-up, an x402
   micropayment, MCP server configuration, or an explanation of the
   { status, message, data } response envelope and error codes — before or
-  alongside any of the per-service skills (twitter-scraper, x-scraper,
-  tiktok-scraper, instagram-scraper, youtube-scraper, reddit-scraper,
+  alongside any of the per-service skills (twitter-api, x-api,
+  tiktok-api, instagram-api, youtube-api, reddit-api,
   google-search, google-maps, google-news, google-play, app-store, yelp).
   Also use it when the user asks how to pay with USDC, fund an agent wallet,
   set up credits, mint or rotate an API key, or connect an MCP client to
@@ -39,8 +39,8 @@ GET, paid in USDC on Base, Polygon, Arbitrum, Monad, or Solana — per call via
 [x402](https://x402.org), or prepaid via credits with a Bearer API key. There
 is no signup form, no OAuth flow, and no API key waitlist.
 
-Each service has its own skill (`twitter-scraper`, `x-scraper`,
-`tiktok-scraper`, `instagram-scraper`, `youtube-scraper`, `reddit-scraper`,
+Each service has its own skill (`twitter-api`, `x-api`,
+`tiktok-api`, `instagram-api`, `youtube-api`, `reddit-api`,
 `google-search`, `google-maps`, `google-news`, `google-play`, `app-store`,
 `yelp`) with its own endpoint table and worked examples. This skill covers the
 part that's identical across all of them: how to pay, how credits work, and
@@ -264,8 +264,8 @@ response fields for you, so applying it is the calling agent's job.
 
 ## Reference
 
-- Per-service skills: `twitter-scraper` / `x-scraper`, `tiktok-scraper`,
-  `instagram-scraper`, `youtube-scraper`, `reddit-scraper`, `google-search`,
+- Per-service skills: `twitter-api` / `x-api`, `tiktok-api`,
+  `instagram-api`, `youtube-api`, `reddit-api`, `google-search`,
   `google-maps`, `google-news`, `google-play`, `app-store`, `yelp`
 - Agent setup instructions (auto-generated, per host): `/skill.md`
 - Machine-readable contract: `/openapi.json` (OpenAPI 3.1, per-operation prices)

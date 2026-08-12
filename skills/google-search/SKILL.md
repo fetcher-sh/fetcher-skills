@@ -6,16 +6,16 @@ description: >-
   API key application. Use when the user wants programmatic Google search
   results as clean JSON, including Google's own operators — site:, filetype:,
   intitle:, and quoted exact phrases — plus pagination, language (hl), and
-  country/region scoping. Also covers SERP scraping, rank tracking input,
-  competitive research, and search-result monitoring without Google's own
-  Custom Search API quota and billing.
+  country/region scoping. Also covers rank tracking input, competitive
+  research, and search-result monitoring without Google's own Custom Search
+  API quota and billing.
 keywords:
   - google-search
   - serp-api
   - serp-api-alternative
   - google-search-api
   - web-search
-  - search-scraper
+  - web-search-api
   - x402
   - ai-agent
 ---

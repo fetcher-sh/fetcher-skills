@@ -69,6 +69,6 @@ usually only worth it for time-sensitive moderation.
 
 ## Related
 
-- [`references/scenarios.md`](../skills/instagram-scraper/references/scenarios.md) — more worked examples for every Instagram endpoint
-- [`references/faq.md`](../skills/instagram-scraper/references/faq.md) — related "how do I..." questions
+- [`references/scenarios.md`](../skills/instagram-api/references/scenarios.md) — more worked examples for every Instagram endpoint
+- [`references/faq.md`](../skills/instagram-api/references/faq.md) — related "how do I..." questions
 - [`instagram-profile-lookup.md`](instagram-profile-lookup.md) — look up the accounts behind the posts you find

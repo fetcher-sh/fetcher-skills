@@ -71,6 +71,6 @@ x402 payment — see the [`fetcher` skill](../skills/fetcher/SKILL.md).
 
 ## Related
 
-- [`references/scenarios.md`](../skills/tiktok-scraper/references/scenarios.md) — more worked examples for every TikTok endpoint
-- [`references/faq.md`](../skills/tiktok-scraper/references/faq.md) — related "how do I..." questions
+- [`references/scenarios.md`](../skills/tiktok-api/references/scenarios.md) — more worked examples for every TikTok endpoint
+- [`references/faq.md`](../skills/tiktok-api/references/faq.md) — related "how do I..." questions
 - [`tiktok-viral-post-search.md`](tiktok-viral-post-search.md) — find posts before you look up who made them

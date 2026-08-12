@@ -6,7 +6,7 @@ Look up the Instagram profile: $ARGUMENTS
 
 1. Strip any leading `@` from `$ARGUMENTS` and call
    `GET https://instagram.fetcher.sh/api/user/handle/{handle}`, authenticated
-   per the [`instagram-scraper` skill](../skills/instagram-scraper/SKILL.md)
+   per the [`instagram-api` skill](../skills/instagram-api/SKILL.md)
    (`Authorization: Bearer $FETCHER_API_KEY`, or an x402 payment if no key is
    set).
 2. Summarize the profile: display name, bio, follower/following counts, and

@@ -5,7 +5,7 @@ description: Search X/Twitter for tweets matching a query via fetcher.sh
 Search Twitter/X for tweets matching: $ARGUMENTS
 
 1. Call `GET https://twitter.fetcher.sh/api/search` with `query=$ARGUMENTS`,
-   authenticated per the [`twitter-scraper` skill](../skills/twitter-scraper/SKILL.md)
+   authenticated per the [`twitter-api` skill](../skills/twitter-api/SKILL.md)
    (`Authorization: Bearer $FETCHER_API_KEY`, or an x402 payment if no key is
    set). If `$ARGUMENTS` already contains X search operators (`from:`,
    `since:`, `min_faves:`, etc.), pass it through unmodified.

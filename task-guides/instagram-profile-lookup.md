@@ -68,6 +68,6 @@ x402 payment — see the [`fetcher` skill](../skills/fetcher/SKILL.md).
 
 ## Related
 
-- [`references/scenarios.md`](../skills/instagram-scraper/references/scenarios.md) — more worked examples for every Instagram endpoint
-- [`references/faq.md`](../skills/instagram-scraper/references/faq.md) — related "how do I..." questions
+- [`references/scenarios.md`](../skills/instagram-api/references/scenarios.md) — more worked examples for every Instagram endpoint
+- [`references/faq.md`](../skills/instagram-api/references/faq.md) — related "how do I..." questions
 - [`instagram-hashtag-and-location-monitoring.md`](instagram-hashtag-and-location-monitoring.md) — the discovery-side counterpart to this profile lookup

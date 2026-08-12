@@ -81,6 +81,6 @@ estimating a large account's cost.
 
 ## Related
 
-- [`references/endpoints.md`](../skills/twitter-scraper/references/endpoints.md) — full parameter reference
-- [`references/faq.md`](../skills/twitter-scraper/references/faq.md) — related "how do I..." questions
+- [`references/endpoints.md`](../skills/twitter-api/references/endpoints.md) — full parameter reference
+- [`references/faq.md`](../skills/twitter-api/references/faq.md) — related "how do I..." questions
 - [`tiktok-profile-and-followers.md`](tiktok-profile-and-followers.md) — the same pattern on TikTok

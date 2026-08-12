@@ -68,6 +68,6 @@ operator X's search bar supports works unmodified:
 
 ## Related
 
-- [`references/scenarios.md`](../skills/twitter-scraper/references/scenarios.md) — more worked examples for every Twitter/X endpoint
-- [`references/faq.md`](../skills/twitter-scraper/references/faq.md) — related "how do I..." questions
+- [`references/scenarios.md`](../skills/twitter-api/references/scenarios.md) — more worked examples for every Twitter/X endpoint
+- [`references/faq.md`](../skills/twitter-api/references/faq.md) — related "how do I..." questions
 - [`export-twitter-followers.md`](export-twitter-followers.md) — the equivalent guide for follower lists instead of search

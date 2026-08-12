@@ -5,8 +5,8 @@ description: Search TikTok for posts matching a keyword via fetcher.sh
 Search TikTok for posts matching: $ARGUMENTS
 
 1. Call `GET https://tiktok.fetcher.sh/api/post/search` with
-   `keyword=$ARGUMENTS`, authenticated per the [`tiktok-scraper`
-   skill](../skills/tiktok-scraper/SKILL.md) (`Authorization: Bearer
+   `keyword=$ARGUMENTS`, authenticated per the [`tiktok-api`
+   skill](../skills/tiktok-api/SKILL.md) (`Authorization: Bearer
    $FETCHER_API_KEY`, or an x402 payment if no key is set). Default to
    `sortType=RELEVANCE`; if the user's phrasing implies "viral" or "trending,"
    use `sortType=MOST_LIKED` with a reasonable `dateRange` (e.g. `THIS_WEEK`)

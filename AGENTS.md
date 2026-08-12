@@ -34,20 +34,20 @@ fetcher-skills/
 │   └── instagram-profile.md
 └── skills/
     ├── fetcher/SKILL.md              # Shared: credits, x402, MCP, key hygiene
-    ├── twitter-scraper/
+    ├── twitter-api/
     │   ├── SKILL.md                  # twitter.fetcher.sh
     │   └── references/               # endpoints.md, scenarios.md, faq.md, comparison.md
-    ├── x-scraper/                    # Same host as twitter-scraper, X-first framing
+    ├── x-api/                    # Same host as twitter-api, X-first framing
     │   ├── SKILL.md
     │   └── references/
-    ├── tiktok-scraper/
+    ├── tiktok-api/
     │   ├── SKILL.md                  # tiktok.fetcher.sh
     │   └── references/
-    ├── instagram-scraper/
+    ├── instagram-api/
     │   ├── SKILL.md                  # instagram.fetcher.sh
     │   └── references/
-    ├── youtube-scraper/SKILL.md      # youtube.fetcher.sh
-    ├── reddit-scraper/SKILL.md       # reddit.fetcher.sh
+    ├── youtube-api/SKILL.md      # youtube.fetcher.sh
+    ├── reddit-api/SKILL.md       # reddit.fetcher.sh
     ├── google-search/SKILL.md        # google.fetcher.sh
     ├── google-maps/SKILL.md          # google-maps.fetcher.sh
     ├── google-news/SKILL.md          # google-news.fetcher.sh
@@ -77,7 +77,7 @@ Each skill lives in `skills/<name>/` and contains a `SKILL.md` file with:
 
 ### Deeper structure for high-search-volume skills
 
-`twitter-scraper`, `x-scraper`, `tiktok-scraper`, and `instagram-scraper` — the
+`twitter-api`, `x-api`, `tiktok-api`, and `instagram-api` — the
 platforms with the most competing "how do I scrape X" content online — get
 three additive layers on top of the base `SKILL.md`. Only add these for a
 skill if it's genuinely one of the highest-search-volume platforms; don't add
@@ -132,12 +132,14 @@ its last edit.
 
 ## Naming conventions
 
-- Skill directories: lowercase, hyphen-separated, ending in `-scraper` for the
-  social platforms competitors also brand that way (`twitter-scraper`,
-  `x-scraper`, `tiktok-scraper`, `instagram-scraper`, `youtube-scraper`,
-  `reddit-scraper`); descriptive names for the rest (`google-search`,
+- Skill directories: lowercase, hyphen-separated, ending in `-api` for the
+  social platforms with the most competing "scraper" content online
+  (`twitter-api`, `x-api`, `tiktok-api`, `instagram-api`, `youtube-api`,
+  `reddit-api`) — deliberately branded as APIs, not scrapers, since that's
+  what fetcher.sh actually is: a paid, structured HTTP endpoint, not a
+  browser-automation scraper; descriptive names for the rest (`google-search`,
   `google-maps`, `google-news`, `google-play`, `app-store`, `yelp`).
-- `twitter-scraper` and `x-scraper` are deliberately near-duplicates targeting the
+- `twitter-api` and `x-api` are deliberately near-duplicates targeting the
   same host (`twitter.fetcher.sh`) under two names, so both "Twitter" and "X"
   searches and trigger phrases resolve to a skill. Keep them in sync when the
   Twitter/X endpoint set changes.

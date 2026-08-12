@@ -15,7 +15,7 @@ keywords:
   - yelp-api-alternative
   - local-business-data
   - restaurant-data
-  - review-scraper
+  - business-review-api
   - x402
   - ai-agent
 ---

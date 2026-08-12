@@ -35,11 +35,11 @@ them.
 
 | Service | Skill | Base URL | What it covers |
 | --- | --- | --- | --- |
-| Twitter / X | [`twitter-scraper`](skills/twitter-scraper/SKILL.md) / [`x-scraper`](skills/x-scraper/SKILL.md) | `twitter.fetcher.sh` | Search tweets, resolve profiles by handle or ID, and pull timelines, replies, followers, lists, and trends |
-| TikTok | [`tiktok-scraper`](skills/tiktok-scraper/SKILL.md) | `tiktok.fetcher.sh` | Search posts, resolve users by handle, and pull followers, hashtags, music, comments, and replies |
-| Instagram | [`instagram-scraper`](skills/instagram-scraper/SKILL.md) | `instagram.fetcher.sh` | Profiles, posts, reels, stories, followers, hashtags, locations, and comment threads |
-| YouTube | [`youtube-scraper`](skills/youtube-scraper/SKILL.md) | `youtube.fetcher.sh` | Search videos, channels, and playlists; fetch video details, comments, shorts, live streams, and trending |
-| Reddit | [`reddit-scraper`](skills/reddit-scraper/SKILL.md) | `reddit.fetcher.sh` | Search posts, subreddits, and users; pull hot/new/top/best feeds, comment trees, and user history |
+| Twitter / X | [`twitter-api`](skills/twitter-api/SKILL.md) / [`x-api`](skills/x-api/SKILL.md) | `twitter.fetcher.sh` | Search tweets, resolve profiles by handle or ID, and pull timelines, replies, followers, lists, and trends |
+| TikTok | [`tiktok-api`](skills/tiktok-api/SKILL.md) | `tiktok.fetcher.sh` | Search posts, resolve users by handle, and pull followers, hashtags, music, comments, and replies |
+| Instagram | [`instagram-api`](skills/instagram-api/SKILL.md) | `instagram.fetcher.sh` | Profiles, posts, reels, stories, followers, hashtags, locations, and comment threads |
+| YouTube | [`youtube-api`](skills/youtube-api/SKILL.md) | `youtube.fetcher.sh` | Search videos, channels, and playlists; fetch video details, comments, shorts, live streams, and trending |
+| Reddit | [`reddit-api`](skills/reddit-api/SKILL.md) | `reddit.fetcher.sh` | Search posts, subreddits, and users; pull hot/new/top/best feeds, comment trees, and user history |
 | Google Search | [`google-search`](skills/google-search/SKILL.md) | `google.fetcher.sh` | Programmatic Google web search results as clean JSON |
 | Google Maps | [`google-maps`](skills/google-maps/SKILL.md) | `google-maps.fetcher.sh` | Place search, place details, and reviews |
 | Google News | [`google-news`](skills/google-news/SKILL.md) | `google-news.fetcher.sh` | Headlines by section (world, business, technology, ...), keyword search, topics, and article URL decoding |
@@ -48,7 +48,7 @@ them.
 | Yelp | [`yelp`](skills/yelp/SKILL.md) | `yelp.fetcher.sh` | Business search by query and location, place details, and reviews |
 | Shared | [`fetcher`](skills/fetcher/SKILL.md) | `fetcher.sh` | Credits, x402, MCP, key hygiene — read this once, applies to every skill above |
 
-`twitter-scraper` and `x-scraper` point at the same host and cover the same
+`twitter-api` and `x-api` point at the same host and cover the same
 endpoints under two names, so a request for either "Twitter" or "X" resolves.
 
 ## Which endpoint do I need?
@@ -57,14 +57,14 @@ The fastest way in, before reading any single skill in full:
 
 | I want to... | Call | Skill |
 | --- | --- | --- |
-| Search tweets/posts by keyword or operator | `GET twitter.fetcher.sh/api/search` | [`twitter-scraper`](skills/twitter-scraper/SKILL.md) |
-| Get an X/Twitter account's followers | `GET twitter.fetcher.sh/api/user/{id}/followers` | [`twitter-scraper`](skills/twitter-scraper/SKILL.md) |
-| Find viral TikTok posts for a keyword | `GET tiktok.fetcher.sh/api/post/search?sortType=MOST_LIKED` | [`tiktok-scraper`](skills/tiktok-scraper/SKILL.md) |
-| Look up a TikTok profile by @username | `GET tiktok.fetcher.sh/api/user/handle/{username}` | [`tiktok-scraper`](skills/tiktok-scraper/SKILL.md) |
-| Look up an Instagram profile by @handle | `GET instagram.fetcher.sh/api/user/handle/{handle}` | [`instagram-scraper`](skills/instagram-scraper/SKILL.md) |
-| Track new posts under an Instagram hashtag | Poll `GET instagram.fetcher.sh/api/hashtag/{name}/posts` | [`instagram-scraper`](skills/instagram-scraper/SKILL.md) |
-| Search or fetch a YouTube video's comments | `GET youtube.fetcher.sh/api/video/{id}/comments` | [`youtube-scraper`](skills/youtube-scraper/SKILL.md) |
-| Search Reddit posts across every subreddit | `GET reddit.fetcher.sh/api/search/post` | [`reddit-scraper`](skills/reddit-scraper/SKILL.md) |
+| Search tweets/posts by keyword or operator | `GET twitter.fetcher.sh/api/search` | [`twitter-api`](skills/twitter-api/SKILL.md) |
+| Get an X/Twitter account's followers | `GET twitter.fetcher.sh/api/user/{id}/followers` | [`twitter-api`](skills/twitter-api/SKILL.md) |
+| Find viral TikTok posts for a keyword | `GET tiktok.fetcher.sh/api/post/search?sortType=MOST_LIKED` | [`tiktok-api`](skills/tiktok-api/SKILL.md) |
+| Look up a TikTok profile by @username | `GET tiktok.fetcher.sh/api/user/handle/{username}` | [`tiktok-api`](skills/tiktok-api/SKILL.md) |
+| Look up an Instagram profile by @handle | `GET instagram.fetcher.sh/api/user/handle/{handle}` | [`instagram-api`](skills/instagram-api/SKILL.md) |
+| Track new posts under an Instagram hashtag | Poll `GET instagram.fetcher.sh/api/hashtag/{name}/posts` | [`instagram-api`](skills/instagram-api/SKILL.md) |
+| Search or fetch a YouTube video's comments | `GET youtube.fetcher.sh/api/video/{id}/comments` | [`youtube-api`](skills/youtube-api/SKILL.md) |
+| Search Reddit posts across every subreddit | `GET reddit.fetcher.sh/api/search/post` | [`reddit-api`](skills/reddit-api/SKILL.md) |
 | Get clean Google web-search results as JSON | `GET google.fetcher.sh/api/search` | [`google-search`](skills/google-search/SKILL.md) |
 | Find and review a local business | `GET yelp.fetcher.sh/api/search` then `/api/place/{id}/reviews` | [`yelp`](skills/yelp/SKILL.md) |
 | Check an app's App Store or Play Store reviews | `GET appstore.fetcher.sh/api/apps/{appId}/reviews` | [`app-store`](skills/app-store/SKILL.md) / [`google-play`](skills/google-play/SKILL.md) |
@@ -82,14 +82,14 @@ endpoint on your own interval, not receiving a callback.
 
 | Use case | How | Skills |
 | --- | --- | --- |
-| Social listening for a brand or topic | Poll keyword/hashtag search on a schedule, diff new post IDs | `twitter-scraper`, `tiktok-scraper`, `instagram-scraper`, `reddit-scraper` |
-| Competitor content snapshot | Pull a profile's recent posts/videos/reviews on demand | `twitter-scraper`, `tiktok-scraper`, `instagram-scraper`, `youtube-scraper` |
-| Follower/audience growth tracking | Paginate follower lists periodically, diff counts and lists yourself | `twitter-scraper`, `tiktok-scraper`, `instagram-scraper` |
+| Social listening for a brand or topic | Poll keyword/hashtag search on a schedule, diff new post IDs | `twitter-api`, `tiktok-api`, `instagram-api`, `reddit-api` |
+| Competitor content snapshot | Pull a profile's recent posts/videos/reviews on demand | `twitter-api`, `tiktok-api`, `instagram-api`, `youtube-api` |
+| Follower/audience growth tracking | Paginate follower lists periodically, diff counts and lists yourself | `twitter-api`, `tiktok-api`, `instagram-api` |
 | App store ASO research | Search apps by term, pull reviews and permissions/data-safety info | `app-store`, `google-play` |
 | Local business research | Search by query + location, pull details and reviews | `yelp`, `google-maps` |
 | News and market research | Pull section headlines or keyword search across languages | `google-news`, `google-search` |
-| Viral/trend discovery | Sort search by likes/date within a recency window | `tiktok-scraper`, `youtube-scraper` |
-| Community/forum research | Pull subreddit feeds, search posts, read comment trees | `reddit-scraper` |
+| Viral/trend discovery | Sort search by likes/date within a recency window | `tiktok-api`, `youtube-api` |
+| Community/forum research | Pull subreddit feeds, search posts, read comment trees | `reddit-api` |
 | Agent-driven data pulls in a pipeline | Call `fetch_data` over MCP instead of hardcoding REST calls | any skill + [`fetcher`](skills/fetcher/SKILL.md) |
 
 ## Installation
@@ -105,7 +105,7 @@ npx skills add fetcher-sh/fetcher-skills
 Install one skill:
 
 ```bash
-npx skills add fetcher-sh/fetcher-skills --skill twitter-scraper
+npx skills add fetcher-sh/fetcher-skills --skill twitter-api
 ```
 
 ### Claude Code
@@ -181,20 +181,20 @@ fetcher-skills/
 │   └── instagram-profile.md
 └── skills/
     ├── fetcher/SKILL.md               # shared payment/MCP skill
-    ├── twitter-scraper/
+    ├── twitter-api/
     │   ├── SKILL.md
     │   └── references/                # deep dives, linked from SKILL.md
     │       ├── endpoints.md            # every param, per endpoint
     │       ├── scenarios.md            # one curl per endpoint
     │       ├── faq.md
     │       └── comparison.md           # vs. official API vs. browser scraper
-    ├── x-scraper/                      # same host as twitter-scraper, X-first wording
+    ├── x-api/                      # same host as twitter-api, X-first wording
     │   ├── SKILL.md
     │   └── references/*.md
-    ├── tiktok-scraper/
+    ├── tiktok-api/
     │   ├── SKILL.md
     │   └── references/*.md
-    ├── instagram-scraper/
+    ├── instagram-api/
     │   ├── SKILL.md
     │   └── references/*.md
     └── <8 more single-file skills>/SKILL.md
@@ -211,9 +211,9 @@ skills are self-contained in a single `SKILL.md` — see
 | --- | --- | --- |
 | General & payment | 6 | — |
 | Data shape & pagination | 4 | — |
-| Twitter / X | 2 | [18 questions in `references/faq.md`](skills/twitter-scraper/references/faq.md) |
-| TikTok | 2 | [15 questions in `references/faq.md`](skills/tiktok-scraper/references/faq.md) |
-| Instagram | 2 | [16 questions in `references/faq.md`](skills/instagram-scraper/references/faq.md) |
+| Twitter / X | 2 | [18 questions in `references/faq.md`](skills/twitter-api/references/faq.md) |
+| TikTok | 2 | [15 questions in `references/faq.md`](skills/tiktok-api/references/faq.md) |
+| Instagram | 2 | [16 questions in `references/faq.md`](skills/instagram-api/references/faq.md) |
 | Discovery & MCP | 3 | — |
 
 ### General & payment
@@ -294,12 +294,12 @@ no publishing, no account actions.
 X's own search operators unmodified. Full walkthrough:
 [`search-tweets.md`](task-guides/search-tweets.md).
 
-#### What's the difference between `twitter-scraper` and `x-scraper`?
+#### What's the difference between `twitter-api` and `x-api`?
 
 Nothing functionally — same host, same endpoints. They exist as two skills
 so agents and search queries using either "Twitter" or "X" terminology find
 a match. More Twitter/X-specific questions:
-[`references/faq.md`](skills/twitter-scraper/references/faq.md).
+[`references/faq.md`](skills/twitter-api/references/faq.md).
 
 ### TikTok
 
@@ -313,7 +313,7 @@ a match. More Twitter/X-specific questions:
 
 Yes — `GET tiktok.fetcher.sh/api/post?url=<the tiktok.com link>` resolves it
 without extracting the numeric video ID yourself. More TikTok-specific
-questions: [`references/faq.md`](skills/tiktok-scraper/references/faq.md).
+questions: [`references/faq.md`](skills/tiktok-api/references/faq.md).
 
 ### Instagram
 
@@ -328,7 +328,7 @@ in one call. Full walkthrough:
 Only by polling — there's no webhook. Call
 `GET instagram.fetcher.sh/api/hashtag/{name}/posts` on a schedule and diff
 new post IDs. More Instagram-specific questions:
-[`references/faq.md`](skills/instagram-scraper/references/faq.md).
+[`references/faq.md`](skills/instagram-api/references/faq.md).
 
 ### Discovery & MCP
 

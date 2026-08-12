@@ -66,6 +66,6 @@ week" instead of "the all-time biggest hits that happen to be recent."
 
 ## Related
 
-- [`references/scenarios.md`](../skills/tiktok-scraper/references/scenarios.md) — more worked examples for every TikTok endpoint
-- [`references/faq.md`](../skills/tiktok-scraper/references/faq.md) — related "how do I..." questions
+- [`references/scenarios.md`](../skills/tiktok-api/references/scenarios.md) — more worked examples for every TikTok endpoint
+- [`references/faq.md`](../skills/tiktok-api/references/faq.md) — related "how do I..." questions
 - [`tiktok-profile-and-followers.md`](tiktok-profile-and-followers.md) — look up the creators behind the posts you find
