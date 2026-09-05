@@ -182,20 +182,21 @@ spend a call:
 ## MCP (Model Context Protocol)
 
 If your client speaks MCP, add a remote server instead of calling HTTP
-directly. Root and every service subdomain each serve their own `/mcp`:
+directly. The full catalog is served at `mcp.fetcher.sh`, and every service
+subdomain also serves its own `/mcp`:
 
 ```json
 {
   "mcpServers": {
     "fetcher": {
-      "url": "https://fetcher.sh/mcp",
+      "url": "https://mcp.fetcher.sh",
       "headers": { "Authorization": "Bearer bby_live_..." }
     }
   }
 }
 ```
 
-Pointing at `https://fetcher.sh/mcp` exposes the full catalog and one named
+Pointing at `https://mcp.fetcher.sh` exposes the full catalog and one named
 shortcut tool per service (`twitter_search`, `youtube_search_video`,
 `tiktok_post_search`, `instagram_user_handle`, `reddit_search_post`,
 `google_search`, `google_maps_place_search`, `google_news_search`,
